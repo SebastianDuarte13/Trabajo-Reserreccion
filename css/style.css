@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #1E1D2B;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:#2f2c47;
+}
+
+header h1{
+    color: #FF702A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.color3{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    
+}
+.color2{
+   color: #FF702A; 
+   border-color: #FF702A;
+}
+.color{
+    color: #fff;
+}
+
+
+.large{
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+
+main button{
+    background-color: #FF702A;
+    color: #fff;
+    padding: 0;
+    margin: 50px;
+    white-space: nowrap;
+    border-radius: .3rem;
+    width: min-content;
+    margin: 0;
+}
+
+.invertir{
+    filter: invert(1);
+}
+
+.boton{
+    font-size: 30px;
+    filter: invert(1);
+    float: right;
+    line-height: 80px;
+    margin-top: 16.5px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;    
+}
+nav{
+    display:flex ;
+    justify-content: flex-start;
+}
+nav ul li {
+    display: inline-block; 
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+main a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF702A;
+    padding: 7px;
+}
+
+main a:hover {
+    color: #1E1D2B;
+    background-color: #FFEFE8;
+}
+
+nav ul li a  {
+    color: #fff; 
+    font-size: 18px;
+    padding: 7px 13px; 
+    transition: 0.3s;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+
+nav ul li a:hover {
+    background-color: #FF702A;
+    color: black;
+}
+
+.contenido {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px; 
+    
+}
+
+.texto {
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #fff; 
+    
+}
+
+
+.arreglo{
+    margin-bottom: 50px;
+}
+
+main h1{
+    font-size: 68px;
+}
+
+.contenido img{
+    margin-right: 60px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.comida {
+    width: 300px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+
+.contenido2 {
+    background-color: #FFEFE8;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    
+}
+
+
+.contenido2 img {
+    width: 100%; 
+    border-radius: 5px;
+}
+
+
+.descripcion {
+    margin-top: 10px; 
+}
+
+.acomodar{
+    margin-left: 30px;
+    margin-left: 30px;
+}
+
+.cuadrado {
+    width: 90%;
+    height: 100%;
+    background-color: #FFEFE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cuadrar{
+    font-size: 58px;
+}
+.tamaño{
+    margin-bottom: 25px;
+}
+
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FF702A; 
+    margin: 0px; 
+}
+.contactos{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.tuneo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.tuneo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.tuneo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+.ajustar{
+    margin-left: 30%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .boton{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 40%;
+        height: 500px;
+        background: #2C2B47;
+        top: 80px;
+        left: -100%;
+        text-align: flex-start;
+        transition: all 0.3s;
+        margin-left: 60%;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #FF702A;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .contenido {
+        flex-direction: column; 
+    }
+
+    .texto {
+        margin: 0;
+    }
+
+    .contenido img {
+        margin-top: 20px; 
+    }
+    
+    .tuneo{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction:row ;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        
+    }
+    .tuneo2{
+        width: 180px;
+        margin-top: 20px;
+    }
+   
+}
